@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import Menu from './Menu';
 import './App.css';
+import headerImage from './images/home.png'; // Adjust the path as needed
+import AssignmentText from './AssignmentText';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '20px 0 0 0' }}> {/* Top margin only */}
+    
+      <div
+        style={{
+          backgroundImage: `url(${headerImage})`,
+          backgroundSize: 'cover',
+          height: '60vh',
+          width: '100%',
+        }}
+      ></div>
+         <AssignmentText />
+      <div style={{ marginTop: '70px', marginLeft: '250px' }}> {/* Left margin added */}
+        <Menu />
+      </div>
+   
     </div>
   );
-}
+};
 
 export default App;

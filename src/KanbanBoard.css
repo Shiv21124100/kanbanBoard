@@ -1,0 +1,107 @@
+/* KanbanBoard.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .kanban-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .kanban-column {
+    background-color: #ebecf0;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .kanban-column h2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .kanban-column-tasklist {
+    background-color: #dfe1e6;
+    padding: 10px;
+    min-height: 500px;
+    border-radius: 5px;
+    /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); */
+  }
+  /* .column-title {
+  color: white;
+} */
+/* .kanban-column h2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  } */
+  
+
+  
+  .kanban-task {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .kanban-task:hover {
+    background-color: #f3f3f3;
+  }
+  
+  .conatiner{
+    background-color: #333;
+  }
+  
+  
+  .kanban-title {
+    color: white; /* Change title color to white */
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the title */
+  }
+ /* KanbanBoard.css */
+
+ .container {
+  background-color: white;
+  width: calc(100% - 20px); /* Adjusts the width to account for the margin */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  margin-right: 70px; /* Right margin */
+  margin-left: auto; /* Optional: centers the container in the available space */
+
+}
+
+
+.kanban-title {
+  color: white; /* Change title color to white */
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.circle {
+  display: inline-block;
+  width: 12px; /* Circle width */
+  height: 12px; /* Circle height */
+  background-color: white; /* Circle color */
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 8px; /* Space between circle and text */
+}
+
+.kanban-board {
+  width: 100%; /* Ensure the board takes full width of the container */
+}
+
+ 
